@@ -40,16 +40,34 @@
     <input type="text" id="month" placeholder="Введіть номер місяця" />
     <button id="check-month">перевірити</button>
 
-    <input type="text" id="days_in_month" placeholder="Введіть номер місяця...">
+    <input
+      type="text"
+      id="days_in_month"
+      placeholder="Введіть номер місяця..."
+    />
     <button id="check-days">ПЕРЕВІРИТИ</button>
 
-
-    <input type="text" id="color" placeholder="Введіть назву кольору...">
+    <input type="text" id="color" placeholder="Введіть назву кольору..." />
     <button id="check-colors">перевірити колір</button>
 
-    <input type="text">
-    <input type="text">
-    
+
+
+  
+
+    <form>
+      <label>Калькулятор:</label>
+      <select name="operations" id="operations">
+        <option value="plus" id="plus">+</option>
+        <option value="minus" id="minus">-</option>
+        <option value="multiply" id="multiply">*</option>
+        <option value="divide" id="divide">/</option>
+      </select>
+      <input type="text" id="input1"/>
+      <input type="text" id="input2"/>
+      <button class="count">порахувати</button>
+      <p class="result">Результат:</p>
+    </form>
+
     <script src="./js/switch.js"></script>
     <script src="./js/first_hm.js"></script>
     <script src="./js/fourth_hm.js"></script>

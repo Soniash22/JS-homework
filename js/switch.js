@@ -207,7 +207,45 @@ btnColor.addEventListener('click', () => {
 
 //! Створити розмітку  з двома полями введення, що приймають числа та список (select) з варіантами вибору операцій: "+", "-", "*", "/". При натисканні на кнопку виводити результат обраної операції над цими числами. Користувач повинен бути попереджений про можливість ділення на нуль.
 
+const operations = document.getElementById('operations')
 
+const count = document.querySelector('.count')
+
+const input1 = document.getElementById('input1')
+const input2 = document.getElementById('input2')
+let showResult = document.querySelector('.result')
+let result;
+
+count.addEventListener('click', (event) => {
+  switch (operations.value) {
+    case 'plus':
+      result = parseFloat(input1.value) + parseFloat(input2.value);
+      break;
+
+      case 'minus':
+      result =  parseFloat(input1.value) - parseFloat(input2.value);
+      break;
+
+      case 'multiply':
+      result =  parseFloat(input1.value) * parseFloat(input2.value);
+      break;
+
+      case 'divide':
+        if (parseFloat(input2.value) === 0) {
+          alert("Ділення на нуль неможливе!");
+          return;
+        }
+        result = parseFloat(input1.value) / parseFloat(input2.value);
+
+      break;
+      default:
+        alert('введіть числа')
+        return;
+  }
+  showResult.textContent = `Результат: ${result}`
+  })
+
+ 
  
 
 //Напиши скрипт вибору готеля по кількості зірок.
@@ -240,49 +278,49 @@ btnColor.addEventListener('click', () => {
 
 //!Змінна lang може приймати 4 значення: 'ua', 'en', 'sp', 'fr'. За допомогою конструкції switch виведи на екран назву місяця в залежності від обраної мови. Наприклад, якщо lang = 'fr', то в консоль виводимо "Janvier".
 
-const lang = prompt("language:");
-let monthUser = 1;
+// const lang = prompt("language:");
+// let monthUser = 1;
 
-switch (lang) {
-  case "ua":
-    switch (monthUser) {
-      case 3:
-        alert("Березень");
-        break;
-        case 4:
-        alert("Квітень");
-        break;
-        case 5:
-        alert("Травень");
-        break;
-    }
-    break;
-  case "en":
-    switch (monthUser) {
-      case 1:
-        alert("March");
-        break;
-    }
-    break;
+// switch (lang) {
+//   case "ua":
+//     switch (monthUser) {
+//       case 3:
+//         alert("Березень");
+//         break;
+//         case 4:
+//         alert("Квітень");
+//         break;
+//         case 5:
+//         alert("Травень");
+//         break;
+//     }
+//     break;
+//   case "en":
+//     switch (monthUser) {
+//       case 1:
+//         alert("March");
+//         break;
+//     }
+//     break;
 
-  case "sp":
-    switch (monthUser) {
-      case 1:
-        alert("Marzo");
-        break;
-    }
-    break;
+//   case "sp":
+//     switch (monthUser) {
+//       case 1:
+//         alert("Marzo");
+//         break;
+//     }
+//     break;
 
-  case "fr":
-    switch (monthUser) {
-      case 1:
-        alert("Mars");
-        break;
-    }
-    break;
-    default:
-      alert('')
-}
+//   case "fr":
+//     switch (monthUser) {
+//       case 1:
+//         alert("Mars");
+//         break;
+//     }
+//     break;
+//     default:
+//       alert('')
+// }
 
 // break;
 // case 'en':

@@ -1,23 +1,23 @@
-'use strict'
+// 'use strict'
 //!1 ДЗ
-let age = 14;
-console.log(age);
+// let age = 14;
+// console.log(age);
 
-const name = 'Sonia';
-console.log(name);
+// const name = 'Sonia';
+// console.log(name);
 
-const isStudent = true;
-console.log(isStudent);
+// const isStudent = true;
+// console.log(isStudent);
 
-const myString = "v mene nemae ulublenoi zitati";
-console.log(myString);
+// const myString = "v mene nemae ulublenoi zitati";
+// console.log(myString);
 
-const myNumber = 13;
-const notMyNumber = 10;
-console.log(myNumber+notMyNumber);
+// const myNumber = 13;
+// const notMyNumber = 10;
+// console.log(myNumber+notMyNumber);
 
-const myNull = null;
-console.log(myNull);
+// const myNull = null;
+// console.log(myNull);
 
 
 
