@@ -52,3 +52,24 @@ for(let i = 0; i < evenArr.length; i++) {
         console.log(evenArr[i]);
     }
 }
+
+//29.03
+
+//!Напиши скрипт, який об'єднує всі елементи массива в один рядок.  Елементів може бути довільна кількість. Нехай елементи массива  в рядку будут розділені комою.
+//- Спочатку через for
+
+const friends = ['Mango', 'Poly', 'Kiwi', 'Ajax'];
+let string = '';
+for(let i = 0; i < friends.length; i++) {
+    string += friends[i];
+    if (i !== friends.length - 1) {
+        string += ', ';
+    } //не вказує на останній елемент масиву.
+
+}
+console.log(string);
+
+// - Потім через join()
+
+console.log(friends.join(', '));
+
