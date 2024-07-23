@@ -1,4 +1,4 @@
-// 'use strict'
+
 //!1 ДЗ
 // let age = 14;
 // console.log(age);
@@ -128,22 +128,22 @@
 
 
 
-let result = 5+5+'5';
-console.log(typeof result);
+// let result = 5+5+'5';
+// console.log(typeof result);
 
 //Створіть змінну email з вашою електронною адресою. Напишіть скрипт, який перевіряє чи містить змінна email символ @ і рахує загальну кількість символів. Результат виведіть в консоль.
 
-let email = 'sonashkolenko22@gmail.com';
-console.log(email.includes ('@'));
-console.log(email.length);
+// let email = 'sonashkolenko22@gmail.com';
+// console.log(email.includes ('@'));
+// console.log(email.length);
 
 // Записати в окремих змінних кожне слово: My, name, is. Поєднати всі слова в змінну fullName. До змінної fullName додати ‘Viktor’. fullName вивести в консоль.
 
-let first = 'My ';
-let second = 'name ';
-let third = 'is ';
-let fullName = (first + second + third);
-console.log(fullName + 'Viktor');
+// let first = 'My ';
+// let second = 'name ';
+// let third = 'is ';
+// let fullName = (first + second + third);
+// console.log(fullName + 'Viktor');
 
 //Створіть змінну userName з ім’ям користувача і змінну payment з сумою до оплати. За допомогою шаблонного рядка виведіть на екран через alert повідомлення на прикладі цього: «Дякуємо, Олександро! До сплати 300 гривень»
 
