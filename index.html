@@ -70,9 +70,51 @@
 
     <input type="text" id="inputnum">
 
+    <button id="hello-btn">Click on me</button>
+
+
+
+    <p>Вгадайте число від 1 до 100:</p>
+    <input type="text" id="guessField">
+    <button type="button" onclick="checkGuess()">Перевірити</button>
+    <p id="guessResult"></p>
+
+
+    <p>Ви клікнули на сторінці:</p>
+    <p id="clickCount">0 разів</p>
+
+
+    
+  <p>Власник рахунку: <span id="ownerName">Sona Shkolenko</span></p>
+  <p>Номер рахунку: <span id="accountNumber">1234567890</span></p>
+  <p>Баланс: <span id="balance">0</span> гривень</p>
+
+  <input type="number" id="amount" placeholder="Сума">
+    <button type="button" onclick="deposit()">поповнити рахунок</button>
+    <button type="button" onclick="withdraw()">отримати ‘готівку’</button>
+
+  
+
+    <p>Температура: <input type="number" id="temperature" placeholder="Введіть температуру"> °C</p>
+    <button onclick="checkTemperature()">Перевірити</button>
+    <p id="result"></p>
+
+    <input type="text" placeholder="name" id="name">
+    <input type="email" placeholder="email" id="email">
+    <input type="text" placeholder="password" id="password">
+    <button type="button" onclick="user.login()">Увійти</button>
+
+    <h1 id="title"></h1>
+  <p id="director"></p>
+  <p id="year"></p>
+  <p id="rating"></p>
+
+
     <!-- <script src="./js/switch.js"></script>
     <script src="./js/first_hm.js"></script>
     <script src="./js/DOM.js"></script> -->
+    <script src="./js/object.js"></script>
     <script src="./js/functions.js"></script>
+    <script src="./js/callback.js"></script>
   </body>
 </html>
